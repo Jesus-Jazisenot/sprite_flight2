@@ -1,0 +1,16 @@
+<IfModule mod_mime.c>
+  AddEncoding br .br
+  AddType application/octet-stream .br
+
+  <FilesMatch "\.js\.br$">
+    AddType application/javascript .br
+  </FilesMatch>
+
+  <FilesMatch "\.wasm\.br$">
+    AddType application/wasm .br
+  </FilesMatch>
+
+  <FilesMatch "\.data\.br$">
+    AddType application/octet-stream .br
+  </FilesMatch>
+</IfModule>
